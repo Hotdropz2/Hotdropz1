@@ -1,182 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>HeatDropz - Designer Reps</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HeatDropz</title>
   <style>
-    * {
-      box-sizing: border-box;
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
-
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background: #fff;
-      color: #111;
-      line-height: 1.6;
-    }
-
     header {
-      background: #fff;
-      border-bottom: 1px solid #ddd;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    header h1 {
-      font-size: 1.8rem;
-      font-weight: 600;
-    }
-
-    .hero {
-      width: 100%;
-      height: 50vh;
-      background: url('https://via.placeholder.com/1600x600?text=HeatDropz+Banner') center center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background-color: black;
       color: white;
-      font-size: 2rem;
-      font-weight: 600;
-      letter-spacing: 1px;
-    }
-
-    .section {
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .section h2 {
+      padding: 20px;
       text-align: center;
-      font-size: 1.8rem;
-      margin-bottom: 30px;
     }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+    h1 {
+      margin: 0;
     }
-
+    .info {
+      text-align: center;
+      padding: 10px;
+      font-size: 16px;
+    }
+    #catalog {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      padding: 40px;
+    }
     .product {
-      border: 1px solid #eee;
-      border-radius: 8px;
-      padding: 15px;
+      width: 250px;
       text-align: center;
-      transition: 0.3s;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
     }
-
-    .product:hover {
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      transform: translateY(-5px);
-    }
-
     .product img {
       width: 100%;
-      border-radius: 6px;
-      margin-bottom: 10px;
+      height: auto;
+      border-radius: 8px;
     }
-
     .product h3 {
-      font-size: 1.1rem;
       margin: 10px 0 5px;
     }
-
     .product p {
-      font-size: 0.9rem;
-      color: #555;
+      font-weight: bold;
     }
-
-    .contact {
-      background: #f9f9f9;
-      padding: 40px 20px;
-      text-align: center;
+    .product button {
+      padding: 10px 15px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
-
-    .contact h2 {
-      font-size: 1.6rem;
-      margin-bottom: 10px;
-    }
-
-    .contact p {
-      font-size: 1rem;
-      margin: 5px 0;
-    }
-
-    footer {
-      background: #000;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9rem;
+    .product button:hover {
+      background-color: #333;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>HeatDropz</h1>
-</header>
+  <header>
+    <h1>HeatDropz</h1>
+  </header>
 
-<section class="hero">
-  Trending Designer Reps 🔥
-</section>
-
-<section class="section">
-  <h2>🔥 Popular Picks</h2>
-  <div class="products">
-    <div class="product">
-      <img src="https://via.placeholder.com/300?text=Hellstar+Hoodie" alt="Hellstar Hoodie">
-      <h3>Hellstar Hoodie</h3>
-      <p>Fire logo print, soft cotton, oversized streetwear fit.</p>
-    </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/300?text=LV+Belt" alt="LV Belt">
-      <h3>LV Belt</h3>
-      <p>Leather monogram replica with iconic buckle styling.</p>
-    </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/300?text=Dior+Shirt" alt="Dior Tee">
-      <h3>Dior Tee</h3>
-      <p>Subtle flex, clean embroidery, soft feel cotton tee.</p>
-    </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/300?text=Designer+Dunks" alt="Dunks">
-      <h3>Designer Dunk Reps</h3>
-      <p>Includes Off-White, Travis, Dior, and more 🔥</p>
-    </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/300?text=Chrome+Hearts+Hat" alt="Chrome Hearts Hat">
-      <h3>Chrome Hearts Hat</h3>
-      <p>Luxury look with bold logo patches. Black & white colorways.</p>
-    </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/300?text=LV+Bag" alt="LV Crossbody Bag">
-      <h3>LV Crossbody</h3>
-      <p>Compact, clean, high-quality replica with classic pattern.</p>
-    </div>
+  <div class="info">
+    Contact: hotdropz2@gmail.com <br>
+    Cash App: <strong>$hotdropz2</strong>
   </div>
-</section>
 
-<section class="contact">
-  <h2>💬 Contact & Ordering</h2>
-  <p><strong>Email:</strong> <a href="mailto:hotdropz2@gmail.com">hotdropz2@gmail.com</a></p>
-  <p><strong>CashApp:</strong> $hotdropz2</p>
-  <p>DM or email with product name. Do not write designer names in CashApp notes.</p>
-</section>
+  <section id="catalog">
+    <!-- Hellstar Hoodie -->
+    <div class="product">
+      <img src="images/hellstar_hoodie.jpg" alt="Hellstar Hoodie">
+      <h3>Hellstar Hoodie</h3>
+      <p>$65</p>
+      <button>Buy Now</button>
+    </div>
 
-<footer>
-  &copy; 2025 HeatDropz. All rights reserved.
-</footer>
+    <!-- LV Belt -->
+    <div class="product">
+      <img src="images/lv_belt.jpg" alt="LV Belt">
+      <h3>LV Belt</h3>
+      <p>$55</p>
+      <button>Buy Now</button>
+    </div>
+
+    <!-- Dior T-Shirt -->
+    <div class="product">
+      <img src="images/dior_shirt.jpg" alt="Dior T-Shirt">
+      <h3>Dior T-Shirt</h3>
+      <p>$45</p>
+      <button>Buy Now</button>
+    </div>
+
+    <!-- Dunk Lows -->
+    <div class="product">
+      <img src="images/dunk_low.jpg" alt="Dunk Low Reps">
+      <h3>Dunk Low (Reps)</h3>
+      <p>$80</p>
+      <button>Buy Now</button>
+    </div>
+
+    <!-- Chrome Hearts Hat -->
+    <div class="product">
+      <img src="images/chrome_hearts_hat.jpg" alt="Chrome Hearts Hat">
+      <h3>Chrome Hearts Hat</h3>
+      <p>$40</p>
+      <button>Buy Now</button>
+    </div>
+  </section>
 
 </body>
 </html>
